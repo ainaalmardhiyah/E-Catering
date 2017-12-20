@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01c3ce"
+    tools:context="com.example.aina.e_catering.SignIn">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/logo"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNoHp"
+            android:hint="No Handphone"
+            android:textColorHint="@android:color/black"
+            android:text="0816665563"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:inputType="phone"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="12"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editPassword"
+            android:hint="Password"
+            android:textColorHint="@android:color/black"
+            android:text="5678"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:inputType="textPassword"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="12"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"
+            />
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSignIn"
+        android:text="Sign In"
+        android:textColor="@android:color/white"
+        android:layout_weight="1"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:buttonColor="@color/buttonSignActive"
+        app:shadowHeight="5dp"
+        android:shadowColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>
